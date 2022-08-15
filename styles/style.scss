@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import "./variables";
+@import './form';
+
+// Primary
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+}
+.splitter{
+    margin-top: 1rem;
+   
+ 
+}
+
+
+body{
+
+
+
+background-color: $light-grayish-cyan;
+height: 93vh;
+
+}
+main{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 2em;
+
+}
+footer{
+    font-size: .7rem;
+    color : $grayish-cyan;
+    opacity: 0.7;
+    text-align: center;
+    margin-top: 1rem;
+}

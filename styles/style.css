@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+form {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 35px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  -webkit-transition: all .5s  ease-out;
+  transition: all .5s  ease-out;
+  max-width: 950px;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.result {
+  color: white;
+  padding: 5%;
+  background-color: #00494d;
+  border-radius: 15px;
+}
+
+.result div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.result .person {
+  display: block;
+  font-size: .7rem;
+  color: #7f9c9f;
+}
+
+span {
+  color: #26c0ab;
+  font-size: 1.3rem;
+}
+
+span::before {
+  content: "$";
+}
+
+.btn {
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.label-input {
+  color: #7f9c9f;
+  font-size: 0.8rem;
+}
+
+input {
+  display: block;
+  font-size: 1rem;
+  width: 100%;
+  height: 1.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: none;
+  outline: none;
+  color: #00494d;
+  background-color: #f4fafa;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio] + label {
+  color: white;
+  border: none;
+  padding: .2em 0;
+  background-color: #00494d;
+  -webkit-transition: all .2s  linear;
+  transition: all .2s  linear;
+}
+
+input[type=radio]:checked + label {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+.custom {
+  padding: .2em 0;
+  text-align: center;
+}
+
+.custom:focus {
+  outline: 2px solid #26c0ab;
+}
+
+.percents-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+}
+
+#bill {
+  background: #f4fafa url("../images/icon-dollar.svg") no-repeat 3% 50%;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+#bill:focus {
+  outline: 2px solid #26c0ab;
+}
+
+#num-people {
+  background: #f4fafa url("../images/icon-person.svg") no-repeat 3% 50%;
+  text-align: right;
+}
+
+#num-people:focus {
+  outline: 2px solid #26c0ab;
+}
+
+.reset {
+  width: 95%;
+  border: none;
+  padding: .2em;
+  margin: 1em  0 1em 1em;
+  background-color: #26c0ab;
+  font-weight: bold;
+  color: #00494d;
+}
+
+.reset:active {
+  background-color: aliceblue;
+}
+
+.reset:disabled {
+  cursor: auto;
+  background-color: #26c0ab;
+  opacity: .2;
+}
+
+@media only screen and (min-width: 650px) {
+  form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 70vh;
+  }
+  .options {
+    width: 50%;
+  }
+  .result {
+    width: 50%;
+  }
+  .percents-wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.invalid-input {
+  outline: 2px solid #e42525;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 24px;
+  font-family: 'Space Mono', monospace;
+}
+
+.splitter {
+  margin-top: 1rem;
+}
+
+body {
+  background-color: #c5e4e7;
+  height: 93vh;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+}
+
+footer {
+  font-size: .7rem;
+  color: #7f9c9f;
+  opacity: 0.7;
+  text-align: center;
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+
+</head>
+<body>
+ 
+  <main>
+    <img class="splitter" src="images/logo.svg" alt="logo">
+     
+
+      <form>
+        <div class="options">
+        <div>
+          <label class="label-input" for="bill">Bill</label>
+        <input id="bill" type="number" maxlength="9" pattern="[0-9]" placeholder="0.00" type="text">
+        <p class="error"></p>
+      </div>
+      <p class="label-input" >select tip  %</p>
+        <div class="percents-wrapper">
+       
+         <input  id="5%" title="radio" name="percentage" value="5" type="radio">
+        <label class="btn" for="5%">5%</label>
+        
+        <input  id="10%" title="radio" name="percentage" value="10" type="radio">
+        <label class="btn"  for="10%">10%</label>
+        
+        <input  id="15%" title="radio" name="percentage" value="15" type="radio">
+        <label class="btn" for="15%">15%</label>
+        
+        <input id="25%" title="radio" name="percentage" value="25" type="radio">
+        <label class="btn"  for="25%">25%</label>
+        
+        <input id="50%" title="radio" name="percentage" value="50" type="radio">
+        <label class="btn" for="50%">50%</label>
+        
+        <input type="number"  placeholder="Custom" maxlength="4"
+        title="custom-percentage" type="text" class="btn custom " id="custom"></input>
+        
+       
+      </div>
+        
+       
+      <div>
+        <label  class="label-input" for="num-people">Number of People</label>
+        <input type="number" id="num-people" maxlength="9" placeholder="0" type="text">
+        <p class="error"></p>
+      </div>
+      </div>
+     
+      
+      <div class="result" >
+        <div>
+        <p  >Tip Amount</p>
+        <span id="tip-amount">0.00</span>
+        
+      </div>
+      <p class="person">/person</p>
+        <div>
+        <p class="result">Total</p>
+        <span id="total">0.00</span>
+      </div>
+        <p class="person">/person</p>
+        
+  
+  <button class="btn reset" type="reset" disabled>Reset</button>
+
+
+      </div>
+
+      </form>
+      
+      
+
+    
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a  href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+<script src="./script/script.js"></script>
+</html>
